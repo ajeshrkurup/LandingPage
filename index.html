@@ -2,34 +2,49 @@
 <html>
 	<head>
 		<title>Landing Page</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
 	</head>
 
 	<body>
 		<div id="container">
-			<header>
-				<img src="Images/logo.jpg">
+			<header id="main-header">
+				<img src="Images/logo.jpg" alt="logo">
 				<hr>
 				<h1>Welcome to Our Landing Page</h1>
 				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque nisl, fringilla.</h4>
 			</header>
-			<section>
-				<aside id="left">
-					<img src="Images/number1.png">
-					<h4>Point One</h4>
-					<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque. Maecenas nunc nulla, pharetra non ornare quis, porta vel libero. Quisque eget libero rutrum, condimentum dui a, gravida sapien.</p>
-
-					<img src="Images/number2.png">
-					<h4>Point Two</h4>
-					<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque. Maecenas nunc nulla, pharetra non ornare quis, porta vel libero. Quisque eget libero rutrum, condimentum dui a, gravida sapien.</p>
-
-					<img src="Images/number3.png">
-					<h4>Point Three</h4>
-					<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque.</p>
-				</aside>
-				<aside id="right">
+			<section id="left">
+				<ul>
+					<li>
+						<img src="Images/number1.png" alt="Point One">
+						<h4>Point One</h4>
+						<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque.</p>
+					</li>
+					<li>	
+						<img src="Images/number2.png" alt="Point Two">
+						<h4>Point Two</h4>
+						<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodalen quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque.</p>
+					</li>
+					<li>
+						<img src="Images/number3.png" alt="Point Three">
+						<h4>Point Three</h4>
+						<p>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue.</p>
+					</li>
+				</ul>
+				<footer id="left-footer">
+					<h3>More About Us</h3>
+					<p>In rhoncus euismod unc vitae hendrerit augue, non facilisis neque. Maecenas nunc nulla, pharetra non ornare quis, porta vel libero.</p>
+				</footer>
+			</section>
+			<section id="right"></section>
 					<form>
-						<h3>Getting Started</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<header id="form-header">
+							<h3>Getting Started</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</header>
 						<label>Name*</label>
 						<input type="text" required>
 						<br>
@@ -44,20 +59,20 @@
 						<br>
 						<span>* Required Fields</span>
 						<input type="submit" value="Get in Touch">
-						<hr>
-						<p>We would never use any of our subscribers information for anything unspecified</p>
-					</form>
-				</aside>
+						<footer id="form-footer">
+							<p>We would never use any of our subscribers information for anything unspecified</p>
+						</footer>		
+					</form>				
 			</section>
-			<section>
-				<img src="Images/testimonial.png">
-				<q>Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque. Maecenas nunc nulla, pharetra non ornare quis, porta vel libero. Quisque eget libero rutrum, condimentum dui a, gravida sapien.</q>
-				<hr>
+			<div class="reset"></div>
+			<section id="testimonial">
+				<img src="Images/testimonial.png" alt="Testimonial Logo">
+				<blockquote>"Donec aliquam felis et fringilla suscipit. Phasellus sed eros at tortor sodales lacinia. Aenean quis tincidunt justo, eget lobortis lectus. Nunc vitae hendrerit augue, non facilisis neque. Maecenas nunc nulla, pharetra non ornare quis, porta vel libero. Quisque eget libero rutrum, condimentum dui a, gravida sapien." - <strong>John Doe Some Company</strong></blockquote>
 			</section>
-			<footer>
+			<footer id="main-footer">
 				Copyright &copy; 2015
 			</footer>
-		</div>
+		</div> <!-- Container -->
 
 		
 	</body>
