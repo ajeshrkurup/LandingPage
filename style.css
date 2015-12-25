@@ -1,9 +1,10 @@
+/*
 body {
-	font-family: 'Roboto', sans-serif; /* Google Font 'Roboto' */
+	font-family: 'Roboto', sans-serif; /* Google Font 'Roboto' *//*
 }
 
 strong {
-	font-weight: bold; /* Setting all strong elements bold. */
+	font-weight: bold; /* Setting all strong elements bold. *//*
 }
 
 #container {
@@ -33,8 +34,10 @@ strong {
 	margin-left: 15%;
 	font-size: 18px;
 }
+*/
 
 /* Styling for left side content */
+/*
 #left {
 	float: left;
 	width: 50%;
@@ -56,7 +59,8 @@ strong {
 #left p {
 	margin: 10px 0 10px 0;
 	line-height: 1.5;
-} 
+}
+*/
 
 #left-footer {
 	border-top: #ddd solid 1px;
@@ -111,7 +115,7 @@ strong {
 }
 
 form span {
-	margin-right: 50px;	
+	margin-right: 50px;
 }
 form input[type="submit"] {
 	display: inline;
@@ -124,7 +128,7 @@ form input[type="submit"] {
 	padding: 2px;
 	float: right;;
 }
-form input[type="submit"]:hover {	
+form input[type="submit"]:hover {
 	background-color: #d55427;
 	font-size: 15px;
 	cursor: pointer;
@@ -182,7 +186,7 @@ form input[type="submit"]:hover {
 
 /* Screen Size < 960 px , ie for Tabs and Small Laptops */
 @media(max-width: 960px) {
-	
+
 	#main-header h1, #main-header h4 {
 		margin: 20px;
 		width: 100%;
@@ -191,7 +195,7 @@ form input[type="submit"]:hover {
 	#main-header h1 {
 		font-size: 28px;
 	}
-	
+
 	#right, #left {
 		float: none;
 		margin: 20px;
@@ -214,11 +218,10 @@ form input[type="submit"]:hover {
 
 /* Screen Size < 568 px , ie for mobile phones */
 @media(max-width: 568px) {
-	
+
 	#main-header h1 {
 		font-size: 20px;
 	}
 }
 
 /**********************************************************************************/
-

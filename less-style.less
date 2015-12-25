@@ -1,0 +1,79 @@
+//Declaring Variables
+
+@spacing1: 10px;
+@spacing2: 15px;
+@spacing3: 40px;
+@color1: #4ea0d8;
+
+//mixin classes
+.bold {
+  font-weight: bold;
+}
+
+.bottom-margin(@value1: 10px) {
+  margin-bottom: @value1;
+}
+
+body {
+	font-family: 'Roboto', sans-serif; /* Google Font 'Roboto' */
+}
+
+strong {
+	.bold; /* Setting all strong elements bold. */
+}
+
+#container {
+	width: 75%;
+	margin: 30px auto;
+}
+
+#main-header {
+  img {
+    margin: auto;
+  	display: block;
+  	.bottom-margin(@spacing1);
+  }
+  hr {
+    height: 3px;
+  	background-color: @color1;
+  }
+  h1 {
+    margin-top: @spacing3;
+  	margin-left: 22%;
+  	font-size: 36px;
+  	//font-weight: bold;
+  	letter-spacing: 1.2;
+    .bold;
+  }
+  h4 {
+    margin-top: @spacing2;
+  	margin-left: 15%;
+  	font-size: 18px;
+    .bottom-margin(@spacing3);
+  }
+}
+
+//styling for left-side content
+#left {
+  float: left;
+	width: 50%;
+	margin-right: 5%;
+
+  ul li {
+    .bottom-margin(@spacing3);
+  }
+  img {
+ 	  margin-right: @spacing1;
+    float: left;
+  }
+  h4 {
+  	padding-bottom: @spacing1;
+  	padding-top: @spacing1;
+    .bold;
+    .bottom-margin(@spacing1);
+  }
+  p {
+  	margin: @spacing1 0 @spacing1 0;
+    line-height: 1.5;
+  }
+}
